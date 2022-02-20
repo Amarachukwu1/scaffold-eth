@@ -16,7 +16,7 @@ const { isAddress, getAddress, formatUnits, parseUnits } = utils;
 //
 // Select the network you want to deploy to here:
 //
-const defaultNetwork = "localhost";
+const defaultNetwork = "mainnet";
 
 const mainnetGwei = 21;
 
@@ -62,8 +62,8 @@ module.exports = {
     //   accounts: [`${process.env.KOVAN_DEPLOYER_PRIV_KEY}`],
     // },
     // mainnet: {
-    //   url: `https://mainnet.infura.io/v3/${process.env.MAINNET_INFURA_KEY}`,
-    //   accounts: [`${process.env.MAINNET_DEPLOYER_PRIV_KEY}`],
+    //   url: `https://mainnet.infura.io/v3/${process.env.7e792748b1ee47c39ee4593dcf72f518}`,
+    //   accounts: [`${process.env.5f7e07af4f871a608a14f0ff53a8f9041e5bf44e1e2efe9503fd8d8be1d1f78f}`],
     // },
     // ropsten: {
     //   url: `https://ropsten.infura.io/v3/${process.env.ROPSTEN_INFURA_KEY}`,
@@ -98,13 +98,13 @@ module.exports = {
       },
     },
     mainnet: {
-      url: "https://mainnet.infura.io/v3/460f40a260564ac4a4f4b3fffb032dad", // <---- YOUR INFURA ID! (or it won't work)
+      url: "https://mainnet.infura.io/v3/7e792748b1ee47c39ee4593dcf72f518", // <---- YOUR INFURA ID! (or it won't work)
 
-      //      url: "https://speedy-nodes-nyc.moralis.io/XXXXXXXXXXXXXXXXXXXXXXXXX/eth/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
+      //      url: "https://speedy-nodes-nyc.moralis.io/b4d1798be977455c2ef6f8d5/eth/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
 
       gasPrice: mainnetGwei*1000000000,
       accounts: {
-        mnemonic: mnemonic(),
+        mnemonic: mnemonic("bridge isolate pitch hire chunk woman copper before subject pause bridge glare"),
       },
     },
     ropsten: {
