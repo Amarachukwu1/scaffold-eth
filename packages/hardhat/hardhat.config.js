@@ -60,11 +60,11 @@ module.exports = {
     // kovan: {
     //   url: `https://rinkeby.infura.io/v3/${process.env.KOVAN_INFURA_KEY}`,
     //   accounts: [`${process.env.KOVAN_DEPLOYER_PRIV_KEY}`],
-    // },
+       },
      mainnet: {
        url: `https://mainnet.infura.io/v3/${process.env.7e792748b1ee47c39ee4593dcf72f518}`,
        accounts: [`${process.env.5f7e07af4f871a608a14f0ff53a8f9041e5bf44e1e2efe9503fd8d8be1d1f78f}`],
-    // },
+       },
     // ropsten: {
     //   url: `https://ropsten.infura.io/v3/${process.env.ROPSTEN_INFURA_KEY}`,
     //   accounts: [`${process.env.ROPSTEN_DEPLOYER_PRIV_KEY}`],
