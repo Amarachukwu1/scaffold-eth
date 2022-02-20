@@ -44,8 +44,8 @@ module.exports = {
   // Follow the directions, and uncomment the network you wish to deploy to.
 
   networks: {
-    localhost: {
-      url: "http://localhost:8545",
+    // localhost: {
+    // url: "http://localhost:8545",
       /*
         notice no mnemonic here? it will just use account 0 of the hardhat node to deploy
         (you can put in a mnemonic here to set the deployer locally)
@@ -61,9 +61,9 @@ module.exports = {
     //   url: `https://rinkeby.infura.io/v3/${process.env.KOVAN_INFURA_KEY}`,
     //   accounts: [`${process.env.KOVAN_DEPLOYER_PRIV_KEY}`],
     // },
-    // mainnet: {
-    //   url: `https://mainnet.infura.io/v3/${process.env.7e792748b1ee47c39ee4593dcf72f518}`,
-    //   accounts: [`${process.env.5f7e07af4f871a608a14f0ff53a8f9041e5bf44e1e2efe9503fd8d8be1d1f78f}`],
+     mainnet: {
+       url: `https://mainnet.infura.io/v3/${process.env.7e792748b1ee47c39ee4593dcf72f518}`,
+       accounts: [`${process.env.5f7e07af4f871a608a14f0ff53a8f9041e5bf44e1e2efe9503fd8d8be1d1f78f}`],
     // },
     // ropsten: {
     //   url: `https://ropsten.infura.io/v3/${process.env.ROPSTEN_INFURA_KEY}`,
@@ -100,7 +100,7 @@ module.exports = {
     mainnet: {
       url: "https://mainnet.infura.io/v3/7e792748b1ee47c39ee4593dcf72f518", // <---- YOUR INFURA ID! (or it won't work)
 
-      //      url: "https://speedy-nodes-nyc.moralis.io/b4d1798be977455c2ef6f8d5/eth/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
+            url: "https://speedy-nodes-nyc.moralis.io/b4d1798be977455c2ef6f8d5/eth/mainnet", // <---- YOUR MORALIS ID! (not limited to infura)
 
       gasPrice: mainnetGwei*1000000000,
       accounts: {
